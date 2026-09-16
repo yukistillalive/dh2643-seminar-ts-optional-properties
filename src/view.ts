@@ -8,7 +8,7 @@
 // points and renders whatever it's told to.
 // ─────────────────────────────────────────────────────────────────────────
 
-import { DEFAULT_SIZE, type Point, type ShapeInput } from "./model";
+import { DEFAULT_SIZE, type Point, type ShapeInput } from "@/model";
 
 export type Mode = "rect" | "brush";
 

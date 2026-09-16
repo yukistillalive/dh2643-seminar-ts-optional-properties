@@ -7,8 +7,8 @@
 // directly here; everything goes through the CanvasView's callback API.
 // ─────────────────────────────────────────────────────────────────────────
 
-import { isDrag, makeClickRect, makeDragRect, makeStroke, withColor, type Point } from "./model";
-import type { CanvasView, Mode } from "./view";
+import { isDrag, makeClickRect, makeDragRect, makeStroke, withColor, type Point } from "@/model";
+import type { CanvasView, Mode } from "@/view";
 
 export class Presenter {
   private mode: Mode = "rect";
