@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Optional Properties Demo</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        font-family: system-ui, sans-serif;
+      }
+      #controls {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.75rem 1rem;
+      }
+      #controls label {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+      }
+      canvas {
+        flex: 1;
+        width: 100%;
+        border-top: 2px solid #333;
+        background: #fafafa;
+        cursor: crosshair;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="controls">
+      <label><input type="radio" name="mode" value="rect" checked /> Rectangle</label>
+      <label><input type="radio" name="mode" value="brush" /> Brush</label>
+      <label>Color <input type="color" id="color" value="#3366ff" /></label>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
